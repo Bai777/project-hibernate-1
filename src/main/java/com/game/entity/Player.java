@@ -13,6 +13,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@NamedQuery(name = "playerGetAllCount", query = "select count(pl) from Player AS pl")
 @Table(schema = "rpg", name = "player")
 public class Player {
     @Id
