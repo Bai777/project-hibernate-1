@@ -17,7 +17,7 @@ import java.util.Date;
 @Table(schema = "rpg", name = "player")
 public class Player {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private Long id;
 
