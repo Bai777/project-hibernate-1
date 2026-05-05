@@ -20,8 +20,8 @@ public class PlayerRepositoryDB implements IPlayerRepository {
     public PlayerRepositoryDB() {
         Properties properties = new Properties();
         properties.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
-        properties.put(Environment.DRIVER, "org.postgresql.Driver");
-        properties.put(Environment.URL, "jdbc:postgresql://localhost:5432/postgres");
+        properties.put(Environment.DRIVER, "com.p6spy.engine.spy.P6SpyDriver");
+        properties.put(Environment.URL, "jdbc:p6spy:postgresql://localhost:5432/postgres");
         properties.put(Environment.USER, "postgres");
         properties.put(Environment.PASS, "admin");
         properties.put(Environment.HBM2DDL_AUTO, "update");
